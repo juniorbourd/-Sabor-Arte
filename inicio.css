@@ -1,0 +1,374 @@
+
+/* Html */
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#111;
+    color:white;
+}
+
+
+/* Barra de Superior */
+
+
+header{
+    background:#111;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 80px;
+}
+
+.logo{
+    font-size:25px;
+    font-weight:bold;
+    color:#f6a000;
+}
+
+.logo span{
+    color:white;
+}
+
+.logo small{
+    display:block;
+    font-size:12px;
+    letter-spacing:3px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:20px;
+}
+
+nav a:hover{
+    color:#f6a000;
+}
+
+
+/* Redes Sociales */
+
+
+.redes{
+    display: flex;
+    gap: 30px;
+}
+
+.redes a{
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.redes img{
+    width: 40px;
+    height: 40px;
+    transition: 0.03;
+    border-radius: 10px;
+}
+
+.redes img:hover{
+    transform: scale(1.2);
+}
+
+
+/* Primer Contenido */
+
+
+.fondo{
+    background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4");
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    height: 750px;
+    color:white;
+    text-align:center;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+}
+
+.fondo h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 80px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #ffffff;
+    text-align: center; 
+}
+
+.fondo p{
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    font-weight: 500px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.busqueda input{
+    width:350px;
+    padding:15px;
+    border-radius:5px;
+    border:none;
+}
+
+button{
+    padding:15px 30px;
+    background:#f6a000;
+    color:white;
+    border:none;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+
+/* Segundo contenido */
+
+
+.fondo2 {
+    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.7)),url("https://images.unsplash.com/photo-1515003197210-e0cd71810b5f");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 300vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    margin-top: -50px;
+    flex-direction: column;
+}
+
+.titulo-busqueda {
+    width: 100%;
+    margin: 20px 0;
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 80px;
+    letter-spacing: 1px;
+    text-align: center; 
+    margin-top: -400px;
+}
+
+.platoDia {
+    width: 100%;
+    margin: 20px 0;
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 80px;
+    letter-spacing: 1px;
+    text-align: center; 
+    margin-top: -100px;
+    margin-bottom: 150px;
+}
+
+#resultado{
+    justify-content: center;
+    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+    padding-top: -80px;
+    margin-top: 150px;
+}
+
+.C-menu{
+    width:300px;
+    padding:20px;
+    border-radius: 35px;
+    overflow: hidden;
+    background: rgba(255,255,255,0.05);
+    transition: 0.3s;
+}
+
+.C-menu h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.C-menu:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(244,163,0,0.4);
+}
+
+.C-menu img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 35px;
+}
+
+.detalle-menu{
+    width: 90%;
+    max-width: 900px;
+    background: rgba(255,255,255,0.05);
+    color: white;
+    border-radius: 20px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,.4);
+    transition: .3s;
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+
+.detalle-menu:hover{
+    transform: translateY(-5px);
+}
+
+.detalle-menu h2{
+    color: #f8b400;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.detalle-menu img{
+    width: 100%;
+    max-width: 450px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.4);
+}
+
+.detalle-menu p{
+    font-size: 17px;
+    line-height: 1.7;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.detalle-menu strong{
+    color: #f8b400;
+}
+
+.detalle-menu p:last-child{
+    background: rgba(255,255,255,0.05);
+    padding: 15px;
+    border-radius: 10px;
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+
+/* Tercer Contenido */
+
+
+.esencia{
+    background: linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),url("img/portada.jpg");
+    height: 850px;
+    color:white;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    margin-top: -50px;
+}
+
+.contenedor{
+    justify-content: center;
+    gap: 50px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.esencia h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 80px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.C-Esencia{
+    width:300px;
+    background:#111;
+    padding:20px;
+    border-radius: 35px;
+    overflow: hidden;
+    background: rgba(255,255,255,0.05);
+    transition: 0.3s;
+}
+
+.C-Esencia:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(244,163,0,0.4);
+}
+
+.C-Esencia p{
+    padding: 15px;
+    color: #ffffff;
+}
+
+.C-Esencia h3{
+    font-size:70px;
+    margin-bottom:15px;
+    text-align: center;
+}
+
+.C-Esencia h4{
+    margin-bottom:25px;
+    text-align: center;
+}
+
+
+/* Footer */
+
+
+footer{
+    color:white;
+    display:flex;
+    justify-content:space-around;
+    padding:30px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #111;
+}
+
+#derechos{
+    text-align: center;
+}
+
+
+/* Olas */
+
+
+.ola{
+    position: relative;
+    width: 100%;
+    height: 140px;
+    overflow: hidden;
+margin-top: -90px;
+}
+
+.ola svg{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.ola path{
+    fill: #f6a000;
+}

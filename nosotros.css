@@ -1,0 +1,278 @@
+/* Html */
+
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#111;
+    color:white;
+}
+
+
+/* Barra de Superior */
+
+
+header{
+    background:#111;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 80px;
+}
+
+.logo{
+    font-size:25px;
+    font-weight:bold;
+    color:#f6a000;
+}
+
+.logo span{
+    color:white;
+}
+
+.logo small{
+    display:block;
+    font-size:12px;
+    letter-spacing:3px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:20px;
+}
+
+nav a:hover{
+    color:#f6a000;
+}
+
+
+/* Redes Sociales */
+
+
+.redes{
+    display: flex;
+    gap: 30px;
+}
+
+.redes a{
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.redes img{
+    width: 40px;
+    height: 40px;
+    transition: 0.03;
+    border-radius: 10px;
+}
+
+.redes img:hover{
+    transform: scale(1.2);
+}
+
+/* Primer Contenido */
+
+
+.fondo{
+    background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4");
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    height: 750px;
+    color:white;
+    text-align:center;
+    justify-content: center;
+    display: flex;
+}
+
+.titulo{
+    width: 80%;
+    max-width: 900px;
+    margin-top: 200px;
+}
+
+.titulo h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 80px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.titulo p{
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #ffffff;
+    text-align: center;
+}
+
+
+/* Segundo contenido */
+
+
+.fondo2 {
+    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.7)),url("https://images.unsplash.com/photo-1515003197210-e0cd71810b5f");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    margin-top: -50px;
+    display: flex;
+    gap: 30px;
+}
+
+.item{
+    background: rgba(255,255,255,0.05);
+    width: 220px;
+    padding: 45px;
+    text-align: center;
+    border-radius: 15px;
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: 0.3s;
+}
+
+.item:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(244,163,0,0.4);
+}
+
+.item h3{
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.item h2{
+    color: #f4a300;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.item p{
+    color: white;
+    font-size: 1.1rem;
+}
+
+
+/* Segundo contenido */
+
+
+.esencia{
+    background: linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),url("img/portada.jpg");
+    height: 850px;
+    color:white;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    margin-top: -50px;
+}
+
+.esencia h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 80px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.contenedor{
+    justify-content: center;
+    gap: 50px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+
+.C-Esencia{
+    width:300px;
+    background: rgba(255,255,255,0.05);
+    padding:20px;
+    border-radius: 35px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,.2);
+    transition: .3s;
+}
+
+.C-Esencia:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(244,163,0,0.4);
+}
+
+.C-Esencia p{
+    padding: 15px;
+    color: #ffffff;
+}
+
+.C-Esencia h3{
+    font-size:70px;
+    margin-bottom:15px;
+    text-align: center;
+}
+
+.C-Esencia h4{
+    margin-bottom:25px;
+    text-align: center;
+}
+
+/* Footer */
+
+
+footer{
+    color:white;
+    display:flex;
+    justify-content:space-around;
+    padding:30px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #111;
+}
+
+#derechos{
+    text-align: center;
+}
+
+
+/* Olas */
+
+
+.ola{
+    position: relative;
+    width: 100%;
+    height: 140px;
+    overflow: hidden;
+margin-top: -90px;
+}
+
+.ola svg{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.ola path{
+    fill: #f6a000;
+}
+
+
+
